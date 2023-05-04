@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Reddit Mod
 @namespace      https://github.com/chawyehsu
-@version        0.1.0
+@version        0.1.1
 @description    Flattened and minimalist theme for Reddit, with dark mode support.
 @author         chawyehsu
 @homepageURL  https://github.com/chawyehsu/reddit-mod
@@ -123,7 +123,6 @@
   EOT;
   boxed "Boxed" <<<EOT
   body {
-    position: relative;
     max-width: 1024px;
     margin: 0 auto;
   }
@@ -140,6 +139,10 @@
     .dropdown.srdrop {
       float: right !important;
       margin-left: 1em;
+    }
+    .drop-choices.srdrop.inuse {
+      left: unset !important;
+      right: 0;
     }
   EOT;
   show "Show" <<<EOT
@@ -689,10 +692,24 @@
     overflow-x: scroll;
     overflow-y: hidden;
   }
+  .author-tooltip.hover-bubble.anchor-top-left::before,
+  .author-tooltip.hover-bubble.anchor-top-right::before {
+    border-bottom-color: var(--color-border);
+    top: -18px;
+  }
+  .author-tooltip.hover-bubble.anchor-top-left.author-tooltip_common::after,
+  .author-tooltip.hover-bubble.anchor-top-right.author-tooltip_common::after {
+    border-bottom-color: var(--color-gray-6);
+    top: -17px;
+  }
   .author-tooltip.hover-bubble.anchor-bottom-left::before,
-  .author-tooltip.hover-bubble.anchor-bottom-right::before,
+  .author-tooltip.hover-bubble.anchor-bottom-right::before {
+    border-top-color: var(--color-border);
+    bottom: -18px;
+  }
   .hover-bubble.anchor-bottom-left:after {
     border-top-color: var(--color-gray-6);
+    bottom: -17px;
   }
   .author-tooltip__head {
     background: var(--color-gray-6);
