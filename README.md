@@ -49,7 +49,7 @@ If you find any, please open an issue and I'll try to fix it.
 
 [badge]: https://img.shields.io/badge/Install%20directly%20with-Stylus-00adad.svg?style=flat-square
 [license-badge]: https://img.shields.io/github/license/chawyehsu/reddit-mod?style=flat-square
-[1]: https://github.com/chawyehsu/reddit-mod/raw/master/reddit-mod.user.css
+[1]: https://raw.githubusercontent.com/chawyehsu/reddit-mod/main/reddit-mod.user.css
 [Stylus]: https://add0n.com/stylus.html
 [Reddit]: https://www.reddit.com
 [GitHub Mod]: https://github.com/chawyehsu/github-mod
